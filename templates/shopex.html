@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+</head>
+<body>
+<h1> Here are the results</h1>
+<form method="get">
+    <table border = 8 style="width: 100%">
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+            </tr>
+         {% for key, value in result.items() %}
+
+            <tr>
+               <td> {{ key }} </td>
+               <td> {{ value }} </td>
+            </tr>
+
+         {% endfor %}
+      </table>
+</form>
+</body>
+</html>
