@@ -6,7 +6,7 @@ from sqlite3 import  Error
 database = str(input("Database file name: "))
 def create_conn(db_file):
 
-    ''''Create a empty data base for Flask application '''
+    ''''Create an empty data base for Flask application '''
 
     try:
         Conn = sqlite3.connect(db_file)
